@@ -1,0 +1,28 @@
+[EN]
+Why do we freeze the layers of the base model?
+
+By freezing the base model layer weights, you prevent them from being modified during the process of further training.
+These weights have been trained on a large dataset (ImageNet) and contain valuable information about general image features such as edges, textures and colors.
+
+In addition, we use the previously trained model as a feature extractor. The convolution layer weights of VGG16
+are already well-tuned to extract universal image features. By freezing these weights, we allow the model to
+to focus on training only new dense layers that are specifically selected for our classification task.
+
+Finally, freezing the weights helps maintain the generalizability of the model and prevents model overfitting.
+Furthermore training such a model is much faster.
+
+
+
+[PL]
+Dlaczego zamrażamy warstwy modelu bazowego?
+
+Zamrażając wagi warstw bazowego modelu, zapobiegasz ich modyfikowaniu podczas procesu dalszego trenowania.
+Wagi te zostały wytrenowane na dużym zbiorze danych (ImageNet) i zawierają cenne informacje o ogólnych cechach obrazu, takich jak krawędzie, tekstury i kolory.
+
+Dodatkowo wykorzystujemy wcześniej wytrenowany model jako ekstraktor cech. Wagi warstw konwolucyjnych VGG16
+są już dobrze dostrojone do wyodrębniania uniwersalnych cech obrazów. Zamrażając te wagi, pozwalamy modelowi
+skupić się na trenowaniu tylko nowych warstw gęstych, które są specjalnie dobrane do naszego zadania klasyfikacyjnego.
+
+Ostatecznie zamrożenie wag pomaga w utrzymaniu uogólnienia modelu i zapobiega przeuczeniu modelu (overfitting), a samo
+trenowanie takiego modelu jest znacznie szybsze.
+
