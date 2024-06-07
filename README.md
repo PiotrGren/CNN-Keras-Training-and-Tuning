@@ -4,7 +4,7 @@
 
 #### English
 
-# # CNN Keras Natural Spaces Classification Training and Tuning
+# CNN Keras Natural Spaces Classification Training and Tuning
 
 ## Table of Contents
 
